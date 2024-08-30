@@ -1,0 +1,93 @@
+/* General Body Styling */
+body {
+    overflow: hidden;
+}
+
+/* Form Container Styling */
+.f1 {
+    margin: 40px auto; /* Adjusted margin for less space around */
+    width: 260px; /* Reduced width for a more compact form */
+    padding: 20px; /* Reduced padding to make the form smaller */
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Slightly smaller radius for a tighter look */
+}
+
+/* User Image Styling */
+.f1 img.user {
+    display: block;
+    margin: 0 auto 10px;
+    width: 60px; /* Reduced size of the image */
+    height: 60px;
+}
+
+/* Header Styling */
+.f1 h1 {
+    text-align: center;
+    font-size: 20px; /* Smaller font size for compact design */
+    margin-bottom: 15px; /* Reduced margin below the header */
+}
+
+/* Paragraph Styling */
+.f1 p {
+    font-size: 14px; /* Slightly smaller font size */
+    margin: 8px 0; /* Reduced margin for tighter spacing */
+}
+
+/* Input Field Styling */
+.f1 input[type="text"],
+.f1 input[type="password"],
+.f1 input[type="email"] {
+    width: calc(100% - 16px); /* Adjusted to match the smaller width */
+    padding: 8px; /* Reduced padding for input fields */
+    margin-bottom: 8px; /* Reduced bottom margin for tighter spacing */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Button Styling */
+.btn {
+    width: 100%;
+    padding: 8px; /* Reduced padding for a smaller button */
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    font-size: 14px; /* Slightly smaller font size for button text */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Link Styling */
+.f1 a {
+    display: block;
+    text-align: center;
+    margin-top: 8px; /* Reduced top margin for compact spacing */
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.f1 a:hover {
+    text-decoration: underline;
+}
+
+/* Error Message Styling */
+#errorBox {
+    color: red;
+    margin: 8px 0; /* Reduced margin for compact design */
+}
+
+/* Message Div Styling */
+.messageDiv {
+    background-color: blue;
+    color: white;
+    padding: 10px 15px; /* Adjusted padding */
+    margin: 8px; /* Reduced margin for a tighter look */
+    border-radius: 5px;
+    font-size: 1rem;
+    opacity: 0;
+    animation: fadeout 7s forwards;
+}

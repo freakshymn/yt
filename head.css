@@ -1,0 +1,124 @@
+/* Header Styling */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distribute space between logo and nav-container */
+    padding: 10px 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #f0f0f0;
+}
+
+/* Logo Styling */
+.logo {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0; /* Ensure no margin around the logo */
+}
+
+.logo a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* Navigation Container */
+.nav-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+.nav-links li a:hover {
+    color: #007BFF;
+}
+
+/* Profile Icon and Menu Styling */
+.profile-icon {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.profile-icon img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.profile-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.profile-menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.profile-menu a:hover {
+    background-color: #f0f0f0;
+}
+
+/* head.css or style.css */
+
+.profile-icon {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.profile-icon img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.profile-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.profile-menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.profile-menu a:hover {
+    background-color: #f0f0f0;
+}

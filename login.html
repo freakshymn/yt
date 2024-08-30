@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form Design</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <link rel="stylesheet" href="head.css">
+</head>
+<body>
+    <div id="nav-container"></div>
+    <div class="f1">
+        <img src="user.png" class="user" alt="User Image">
+        <h1>Login Here</h1>
+        <form id="loginForm">
+            <div id="loginmessage" class="messageDiv" style="display:none"></div>
+            <p>Username</p>
+            <input type="text" id="uname" name="uname" placeholder="Enter Username">
+            <p>Password</p>
+            <input type="password" id="upswd" name="upswd" placeholder="Enter Password">
+            <div id="errorBox"></div>
+            <button class="btn" id="submitlogin">Login</button>
+            <br><br>
+            <a href="register.html">Register Page</a>
+        </form>
+    </div>
+
+    <script type="module" src="script.js" defer></script>
+</body>
+</html>

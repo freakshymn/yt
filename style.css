@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+     background-color: lightgray; 
+}
+
+.lm {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    padding-left: 90px;
+    padding-top: 100px;
+}
+
+.yt {
+    display: flex; /* Use Flexbox to align items in a row */
+    flex-wrap: wrap; /* Allow wrapping if there are too many iframes to fit in one row */
+    gap: 50px; /* Space between each iframe */
+    justify-content: center; /* Center the row of videos */
+    padding: 90px;
+}
+
+.yt iframe {
+    width: 300px; /* Set a fixed width for each iframe */
+    height: 200px; /* Set a fixed height for each iframe */
+    border: none;
+    /* Optional: Add box-shadow or border for styling */
+}
+
+/* Keyframes for the typing animation */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+/* Keyframes for the blinking cursor effect */
+/* @keyframes blink {
+    0% { border-color: transparent; }
+    50% { border-color: black; }
+    100% { border-color: transparent; }
+} */
+
+/* Container styling */
+.content {
+    position: relative;
+    width: fit-content;
+}
+
+/* Typing animation styling */
+.typing-animation {
+    display: inline-block;
+    overflow: hidden; /* Ensures that the text doesn't overflow the container */
+    white-space: nowrap; /* Keeps the text in a single line */
+    animation: typing 4s steps(40, end), blink 0.75s infinite;
+    font-family: monospace; /* Optional: For a typewriter font look */
+    font-size: 15px; /* Adjust as needed */
+}
+
+.videos{
+    padding-left: 70px;
+}
+
+
+/* head.css or style.css */
+
+.profile-icon {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.profile-icon img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.profile-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.profile-menu a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.profile-menu a:hover {
+    background-color: #f0f0f0;
+}

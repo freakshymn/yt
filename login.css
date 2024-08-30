@@ -1,0 +1,79 @@
+body {
+    overflow: hidden;
+    
+}
+.f1 {
+    margin: 50px auto;
+    width: 300px;
+    padding: 30px;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.f1 img.user {
+    display: block;
+    margin: 0 auto 10px;
+    width: 80px;
+    height: 80px;
+}
+
+.f1 h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.f1 p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.f1 input[type="text"], .f1 input[type="password"], .f1 input[type="email"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.f1 a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.f1 a:hover {
+    text-decoration: underline;
+}
+
+#errorBox {
+    color: red;
+    margin: 10px 0;
+}
+.messageDiv {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    opacity: 0;
+    animation: fadeout 7s forwards;
+}

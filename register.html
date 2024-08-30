@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form Design</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <link rel="stylesheet" href="head.css">
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div id="nav-container"></div>
+    
+    <div class="f1">
+        <img src="user.png" class="user" alt="User Image">
+        <h1>Register Here</h1>
+        <form id="registerForm">
+            <div id="signupmessage" class="messageDiv" style="display:none"></div>
+            <p>Username</p>
+            <input type="text" id="uname1" name="uname1" placeholder="Enter Username">
+            <p>Email</p>
+            <input type="email" id="email1" name="email1" placeholder="Enter Email ID">
+            <p>Password</p>
+            <input type="password" id="upswd1" name="upswd1" placeholder="Enter Password">
+            <p>Retype Password</p>
+            <input type="password" id="upswd2" name="upswd2" placeholder="Re-Enter Password">
+            <div id="errorBox"></div>
+            <button class="btn" id="submitsignup">Register</button>
+            <br><br>
+            <a href="login.html">Login Page</a>
+        </form>
+    </div>
+
+    <script type="module" src="script.js" defer></script>
+</body>
+</html>
