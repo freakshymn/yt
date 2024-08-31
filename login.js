@@ -23,6 +23,7 @@ export async function handleLogin() {
             const hashedPassword = await hashPassword(password);
 
             if (hashedPassword === userData.password) {
+                localStorage.setItem('loggedInUser', true);
                 window.location.href = 'index.html'; // Redirect to index page after login
             } else {
                 errorBox.innerText = "Incorrect password!";

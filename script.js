@@ -4,7 +4,7 @@ import { handleLogin } from './login.js';
 
 // Function to load navigation
 const loadNav = () => {
-    fetch('head.html')
+    return fetch('head.html')  // Return the promise to allow chaining
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
@@ -80,25 +80,23 @@ const youtube = async () => {
     }
 };
 
-// Ensure DOM is fully loaded before running scripts
-document.addEventListener("DOMContentLoaded", () => {
+// Function to handle the user interface after loading the navigation
+const setupUserInterface = () => {
+    // Ensure DOM is fully loaded before running scripts
+
     // Check if user is logged in
-    const isLoggedIn = localStorage.getItem('loggedIn');
+    const isLoggedIn = localStorage.getItem('loggedInUser');
     console.log("loggedIn:", isLoggedIn);
 
-    // Retrieve elements by class name
-    const profileIconElements = document.getElementsByClassName('profile-icon');
-    const loginLinkElements = document.getElementsByClassName('login-link');
-    const profileMenuElements = document.getElementsByClassName('profile-menu');
-    const logoutLinkElements = document.getElementsByClassName('logout-link');
+    // Retrieve  by class name
+    const profileIcon = document.getElementById('profile-icon');
+    const loginLink = document.getElementById('login-link');
+    const profileMenu = document.getElementById('profile-menu');
+    const logoutLink = document.getElementById('logout-link');
 
-    // Ensure we have the correct elements from the collections
-    const profileIcon = profileIconElements[0]; // Assuming there is only one profile icon
-    const loginLink = loginLinkElements[0];     // Assuming there is only one login link
-    const profileMenu = profileMenuElements[0]; // Assuming there is only one profile menu
-    const logoutLink = logoutLinkElements[0];   // Assuming there is only one logout link
 
     if (isLoggedIn) {
+
         // User is logged in, show profile icon and hide login link
         if (profileIcon) profileIcon.style.display = 'block';
         if (loginLink) loginLink.style.display = 'none';
@@ -127,14 +125,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Function to handle logout
     const handleLogout = () => {
-        localStorage.removeItem('loggedIn');
+        localStorage.removeItem('loggedInUser');
         window.location.href = 'login.html'; // Redirect to login.html after logout
     };
-});
+};
 
-
-document.addEventListener("DOMContentLoaded", () => {
-    loadNav();
+document.addEventListener("DOMContentLoaded", async() => {
+    await loadNav();
+    setupUserInterface();
     youtube();
-
 });
